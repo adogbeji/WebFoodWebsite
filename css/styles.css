@@ -51,6 +51,12 @@ body {
     align-items: center;
 }
 
+@media only screen and (max-width: 65.625em) {  /* 1050px */
+    ._0471-sect_1-topnav {
+        display: none;
+    }
+}
+
 ._0471-sect_1-topnav__logo-link {
     /* font-family: 'Oleo Script', system-ui; */
     font-size: 3.5rem;
@@ -65,7 +71,7 @@ body {
 }
 
 ._0471-sect_1-topnav__link-box {
-    /* background-color: #00FF00; */
+    background-color: #00FF00;
 
     /* flex: 0 0 90%; */
     flex: 0 0 30%;
@@ -103,12 +109,24 @@ body {
     display: none;  /* Required */
 }
 
+@media only screen and (max-width: 65.625em) {  /* 1050px */
+    ._0471-sect_1-topnav-mobilenav {
+        display: block;
+    }
+}
+
 ._0471-sect_1-topnav-mobilenav__mobile-menu {
     /* background-color: #0000FF;  // Testing */
     /* background-color: #9327D6; */
     background-color: #222222;
 
     display: none;  /* Required */
+}
+
+@media only screen and (max-width: 65.625em) {  /* 1050px */
+    ._0471-sect_1-topnav-mobilenav__mobile-menu {
+        display: block;
+    }
 }
 
 ._0471-sect_2 {
