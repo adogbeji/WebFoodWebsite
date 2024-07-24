@@ -33,8 +33,82 @@ body {
 }
 
 ._0471-sect_1 {
-    background-color: #00FFFF;
+    /* background-color: #00FFFF; */
+    background-color: #222222;
     grid-column: full-start / full-end;
+}
+
+._0471-sect_1-topnav {
+    /* Add a purple background color to the top navigation */
+    /* background-color: #9327D6; */
+    background-color: inherit;  /* Takes background colour set on its parent */
+    padding: 1.2rem;  /* Creates space inside the navbar (optional, but recommended!) */
+
+    position: relative;  /* Used to position responsive dropdowns (required) */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+._0471-sect_1-topnav__logo-link {
+    /* font-family: 'Oleo Script', system-ui; */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #C2B41B;
+    letter-spacing: .3rem;
+    display: inline-block;
+    text-decoration: none;
+
+    /* margin-left: 3rem; */
+    margin-left: 4%;
+}
+
+._0471-sect_1-topnav__link-box {
+    /* background-color: #00FF00; */
+
+    /* flex: 0 0 90%; */
+    flex: 0 0 30%;
+
+    display: flex;
+    justify-content: center;
+
+    column-gap: 2.8rem;  /* Creates space between links */
+}
+
+._0471-sect_1-topnav__link {
+    /* font-size: 1.4rem; */
+    font-size: 2.5rem;
+    /* color: #FFFFFF; */
+    color: #C2B41B;
+    display: inline-block;
+    text-decoration: none;
+}
+
+._0471-sect_1-topnav__link:hover {
+    color: #FFFF00;
+}
+
+
+/* Mobile Navbar */
+._0471-sect_1-topnav-mobilenav {
+    /* Add same background color to mobile navigation */
+    /* background-color: #9327D6; */
+    background-color: inherit;  /* Takes background colour set on its parent */
+
+    /* padding: .55rem 0;  Top and bottom padding increases height (optional) */
+    
+    padding: 1.5rem;  /* Prevents logo and icon being too close to edge of viewport */
+
+    display: none;  /* Required */
+}
+
+._0471-sect_1-topnav-mobilenav__mobile-menu {
+    /* background-color: #0000FF;  // Testing */
+    /* background-color: #9327D6; */
+    background-color: #222222;
+
+    display: none;  /* Required */
 }
 
 ._0471-sect_2 {
