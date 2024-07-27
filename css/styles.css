@@ -256,7 +256,7 @@ body {
     margin: 0 auto;
     margin-top: 7rem;
     text-align: center;
-    background-color: #FF0000;
+    /* background-color: #FF0000; */
 }
 
 ._0471-sect_2-text {
@@ -266,11 +266,27 @@ body {
     letter-spacing: .3rem;
 }
 
+@media only screen and (max-width: 75rem) {  /* 1200px */
+    ._0471-sect_2-text-box {
+        margin-top: 6rem;
+    }
+
+    ._0471-sect_2-text {
+        font-size: 5.2rem;
+    }
+}
+
+@media only screen and (max-width: 65.625em) {  /* 1050px */
+    ._0471-sect_2-text {
+        font-size: 4.7rem;
+    }
+}
+
 ._0471-sect_2-card-box {
     width: 90%;
     margin: 0 auto;
     padding: 13rem 0;
-    background-color: #808080;
+    /* background-color: #808080; */
 
     display: flex;
     justify-content: center;
@@ -280,7 +296,8 @@ body {
 
 @media only screen and (max-width: 65.625em) {  /* 1050px */
     ._0471-sect_2-card-box {
-        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 2.2rem;
     }
 }
 
@@ -325,7 +342,7 @@ body {
 
 ._0471-sect_2-card__card-text-box {
     text-align: center;
-    background-color: #FF0000;
+    /* background-color: #FF0000; */
 }
 
 ._0471-sect_2-card__card-text {
@@ -333,10 +350,16 @@ body {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 75rem) {  /* 1200px */
+    ._0471-sect_2-card__card-text {
+        font-size: 2rem;
+    }
+}
+
 ._0471-sect_2-card__card-button-box {
     text-align: center;
     padding: 1rem 0;
-    background-color: #00FF00;
+    /* background-color: #00FF00; */
 }
 
 ._0471-sect_2-card__card-button {
@@ -347,4 +370,14 @@ body {
     padding: .8rem 1.2rem;
     border-radius: .5rem;
     background-color: orange;
+}
+
+@media only screen and (max-width: 75em) {  /* 1200px */
+    ._0471-sect_2-card__card-button-box {
+        padding: .75rem 0;
+    }
+
+    ._0471-sect_2-card__card-button {
+        font-size: 1.85rem;
+    }
 }
