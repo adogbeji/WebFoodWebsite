@@ -265,3 +265,86 @@ body {
     color: #C2B41B;
     letter-spacing: .3rem;
 }
+
+._0471-sect_2-card-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 13rem 0;
+    background-color: #808080;
+
+    display: flex;
+    justify-content: center;
+
+    column-gap: 3.4rem;
+}
+
+@media only screen and (max-width: 65.625em) {  /* 1050px */
+    ._0471-sect_2-card-box {
+        flex-wrap: wrap;
+    }
+}
+
+._0471-sect_2-card {
+    flex: 0 0 25%;
+
+    transition: all .3s;
+    /* width: 40%;  Controls size of card (optional) */
+    border-radius: .5rem;
+    border: .15rem solid #BBB9B9;  /* Makes card stand out (optional) */
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+    /* background-color: #FFFFFF;  Testing */
+    background-color: burlywood;
+}
+
+._0471-sect_2-card:hover {
+    box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+}
+
+._0471-sect_2-card-bg-image-1,
+._0471-sect_2-card-bg-image-2 {
+    height: 20rem;  /* Makes image visible (required) */
+    /* background-image: url('../images/risotto.jpg'); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scale(1);
+}
+
+._0471-sect_2-card-bg-image-1 {
+    background-image: url('../images/risotto.jpg');
+}
+
+._0471-sect_2-card-bg-image-2 {
+    background-image: url('../images/cheeseburgers.jpg');
+}
+
+._0471-sect_2-card__body {
+    padding: 1rem;
+}
+
+._0471-sect_2-card__card-text-box {
+    text-align: center;
+    background-color: #FF0000;
+}
+
+._0471-sect_2-card__card-text {
+    color: #420000;
+    font-weight: 700;
+}
+
+._0471-sect_2-card__card-button-box {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #00FF00;
+}
+
+._0471-sect_2-card__card-button {
+    font-size: 2.1rem;
+    color: #FFFFFF;
+    display: inline-block;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    border-radius: .5rem;
+    background-color: orange;
+}
